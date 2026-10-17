@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="TaiMENのゲームの使い方とAI判定用プロンプトの配布ページ。"><title>TaiMEN GAMES</title><link rel="stylesheet" href="./assets/style.css?v=4"><script src="./assets/prompt.js?v=2" defer></script></head>
 <body><header><a class="brand" href="./">TaiMEN GAMES</a></header><main>
-<section id="games"><div class="section-heading"><h2>ゲーム一覧</h2><small>04 AVAILABLE / 05 GAMES</small></div><nav class="game-nav" aria-label="ゲームを選ぶ"><a href="#in-bouron">in暴論</a><a href="#aimai-sanjushi">あいまい三銃士を連れてきてよ</a><a href="#aimai-arena">AIまいアリーナ</a><a href="#one-chance-poker">ワンチャンポーカー</a><a href="#aimai-detective">AIまい探偵の事件簿</a></nav><article class="game-card single-game has-cover" id="in-bouron" data-game><figure class="cover"><a href="./assets/covers/in-bouron.png" target="_blank" rel="noopener noreferrer" aria-label="in暴論の表紙を原寸で開く（新しいタブ）"><img src="./assets/covers/in-bouron.png" alt="in暴論の表紙" width="750" height="1040" loading="lazy" decoding="async"></a></figure><div class="card-body"><span class="badge">公開中</span><h3>in暴論</h3><p>お題の証拠となる写真を撮り、その説得力をAIが評価するゲーム。</p><p class="muted">バージョン：v1.1 ／ 更新日：2026-10-17</p><ol class="instructions"><li>プロンプトをコピーし、ChatGPTの新しいチャットに貼り付けて送信します。</li><li>カードの2つのお題から1つを選び、そのお題を送ります。</li></ol><p class="muted">時間の計測・勝敗判定・カードのシャッフルは、プレイヤー側で行ってください。</p><div class="actions"><button class="button" type="button" data-copy>判定用プロンプトをコピー</button><a class="button secondary" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPTを開く ↗<span class="sr-only">（新しいタブ）</span></a></div><p data-copy-status role="status" aria-live="polite"></p><details><summary>プロンプト全文・手動コピー</summary><p class="muted">自動コピーができない場合は、下の全文を直接選択してコピーしてください。</p><textarea data-prompt aria-label="in暴論の判定用プロンプト全文" readonly rows="10">あなたはパーティーゲーム「in暴論」の審査員です。
+<section id="games"><div class="section-heading"><h2>ゲーム一覧</h2><small>05 AVAILABLE / 05 GAMES</small></div><nav class="game-nav" aria-label="ゲームを選ぶ"><a href="#in-bouron">in暴論</a><a href="#aimai-sanjushi">あいまい三銃士を連れてきてよ</a><a href="#aimai-arena">AIまいアリーナ</a><a href="#one-chance-poker">ワンチャンポーカー</a><a href="#aimai-detective">AIまい探偵の事件簿</a></nav><article class="game-card single-game has-cover" id="in-bouron" data-game><figure class="cover"><a href="./assets/covers/in-bouron.png" target="_blank" rel="noopener noreferrer" aria-label="in暴論の表紙を原寸で開く（新しいタブ）"><img src="./assets/covers/in-bouron.png" alt="in暴論の表紙" width="750" height="1040" loading="lazy" decoding="async"></a></figure><div class="card-body"><span class="badge">公開中</span><h3>in暴論</h3><p>お題の証拠となる写真を撮り、その説得力をAIが評価するゲーム。</p><p class="muted">バージョン：v1.1 ／ 更新日：2026-10-17</p><ol class="instructions"><li>プロンプトをコピーし、ChatGPTの新しいチャットに貼り付けて送信します。</li><li>カードの2つのお題から1つを選び、そのお題を送ります。</li></ol><p class="muted">時間の計測・勝敗判定・カードのシャッフルは、プレイヤー側で行ってください。</p><div class="actions"><button class="button" type="button" data-copy>判定用プロンプトをコピー</button><a class="button secondary" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPTを開く ↗<span class="sr-only">（新しいタブ）</span></a></div><p data-copy-status role="status" aria-live="polite"></p><details><summary>プロンプト全文・手動コピー</summary><p class="muted">自動コピーができない場合は、下の全文を直接選択してコピーしてください。</p><textarea data-prompt aria-label="in暴論の判定用プロンプト全文" readonly rows="10">あなたはパーティーゲーム「in暴論」の審査員です。
 
 プレイヤーにはお題カードが提示され、カードに書かれた2つのお題のうち1つを選びます。
 
@@ -396,5 +396,73 @@ JOKERが選ばれている場合は、どの名詞として使うかを確認し
 - ワンチャン役がAIの成立役と同じ役名なら、ワンチャン度は100％です。ダイス判定の指示があれば必ず成功し、追加1点を与えます。ダイス判定を求められる前には加算しません。
 - JOKERの代用名詞はプレイヤーが指定します。AIが勝手に選びません。
 - 同じラウンドで再びダイスを求められた場合は、振り直しを認めます。成立役・ワンチャン役・ワンチャン度は直前の評価で固定し、ダイスだけを振り直してください。
-- 振り直しでは、対象となる前の判定結果を置き換えます。そのラウンドの以前の勝利点・成功追加点を取り消し、新しい結果に基づいて全員のラウンド得点を再計算してから累計に反映してください。得点を重複加算してはいけません。</textarea></details></div></article><article class="game-card single-game has-cover" id="aimai-detective" data-game><figure class="cover detective-covers"><div class="cover-pair"><a href="./assets/covers/aimai-detective-a.png" target="_blank" rel="noopener noreferrer" aria-label="AIまい探偵の事件簿の黄色の表紙を開く（新しいタブ）"><img src="./assets/covers/aimai-detective-a.png" alt="AIまい探偵の事件簿の黄色の表紙" width="770" height="1020" loading="lazy" decoding="async"></a><a href="./assets/covers/aimai-detective-b.png" target="_blank" rel="noopener noreferrer" aria-label="AIまい探偵の事件簿のピンクの表紙を開く（新しいタブ）"><img src="./assets/covers/aimai-detective-b.png" alt="AIまい探偵の事件簿のピンクの表紙" width="770" height="1020" loading="lazy" decoding="async"></a></div><figcaption>A・Bパーツで1作品</figcaption></figure><div class="card-body"><span class="badge">準備中</span><h3>AIまい探偵の事件簿</h3><p>A・Bパーツを合わせて遊ぶ1作品です。正式なルールとプロンプトを確認後に掲載します。</p><p class="muted">バージョン：未公開 ／ 更新日：未公開</p><div class="actions"><button class="button" type="button" data-copy disabled>判定用プロンプトをコピー（準備中）</button><a class="button secondary" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPTを開く ↗<span class="sr-only">（新しいタブ）</span></a></div><p data-copy-status role="status" aria-live="polite"></p><details><summary>プロンプト全文・手動コピー</summary><p class="muted">正式版の公開後、全文をここから直接選択できます。</p><textarea data-prompt aria-label="AIまい探偵の事件簿の判定用プロンプト全文" readonly rows="10" placeholder="正式な判定用プロンプトは、まだ公開されていません。"></textarea></details></div></article><p class="muted">4作品のプロンプトを公開中です。AIまい探偵の事件簿は準備中です。</p></section>
+- 振り直しでは、対象となる前の判定結果を置き換えます。そのラウンドの以前の勝利点・成功追加点を取り消し、新しい結果に基づいて全員のラウンド得点を再計算してから累計に反映してください。得点を重複加算してはいけません。</textarea></details></div></article><article class="game-card single-game has-cover" id="aimai-detective" data-game><figure class="cover detective-covers"><div class="cover-pair"><a href="./assets/covers/aimai-detective-a.png" target="_blank" rel="noopener noreferrer" aria-label="AIまい探偵の事件簿の黄色の表紙を開く（新しいタブ）"><img src="./assets/covers/aimai-detective-a.png" alt="AIまい探偵の事件簿の黄色の表紙" width="770" height="1020" loading="lazy" decoding="async"></a><a href="./assets/covers/aimai-detective-b.png" target="_blank" rel="noopener noreferrer" aria-label="AIまい探偵の事件簿のピンクの表紙を開く（新しいタブ）"><img src="./assets/covers/aimai-detective-b.png" alt="AIまい探偵の事件簿のピンクの表紙" width="770" height="1020" loading="lazy" decoding="async"></a></div><figcaption>A・Bパーツで1作品</figcaption></figure><div class="card-body"><span class="badge">公開中</span><h3>AIまい探偵の事件簿</h3><p>事件解決に最も有力な手がかりを、AI探偵が判定するゲーム。A・Bパーツを合わせて遊びます。</p><p class="muted">バージョン：v1.0 ／ 更新日：2026-10-17</p><ol class="instructions"><li>プロンプトをコピーし、ChatGPTの新しいチャットに貼り付けて送信します。</li><li>事件の内容と、各プレイヤーの名前・提出した手がかりを送ります。</li></ol><div class="actions"><button class="button" type="button" data-copy>判定用プロンプトをコピー</button><a class="button secondary" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPTを開く ↗<span class="sr-only">（新しいタブ）</span></a></div><p data-copy-status role="status" aria-live="polite"></p><details><summary>プロンプト全文・手動コピー</summary><p class="muted">自動コピーができない場合は、下の全文を直接選択してコピーしてください。</p><textarea data-prompt aria-label="AIまい探偵の事件簿の判定用プロンプト全文" readonly rows="10">あなたはパーティーゲーム「AIまい探偵の事件簿」のAI探偵です。
+プレイヤーは探偵助手として、事件の解決に最も有力だと思う手がかりを1人1枚ずつ提出します。あなたは事件と各手がかりを比較し、最も有力な手がかりと、その提出者を判定します。
+このゲームは、提示された事件と手がかりの結びつきを楽しむフィクションです。現実の事件捜査ではありません。
+
+## 必要な入力
+
+・事件カードの内容
+・各プレイヤーの名前と、提出した手がかりカードの内容
+
+この指示文だけを受け取ったら「事件の内容と、各プレイヤーの名前・手がかりを送ってください。」と短く返してください。
+事件や手がかりが不足している場合は、不足する項目だけを短く確認してください。事件や未提出の手がかりを勝手に作って判定してはいけません。
+プレイヤー名が未記入なら、提出順にプレイヤー1、プレイヤー2のように区別できます。
+
+入力例：
+事件：〇〇事件
+プレイヤー1：名前／手がかり
+プレイヤー2：名前／手がかり
+プレイヤー3：名前／手がかり
+
+## あなたが判定すること
+
+各手がかりが、その事件を解決するためにどのように役立つかを判断してください。派手さ、珍しさ、強さだけで選ばず、事件解決への有力さを比較してください。
+事件の性質に応じ、犯人・原因・経緯・場所・方法を絞ること、事実の確認や裏付けを得ることにつながるかを考えてください。これらは比較の視点であり、独自の数値採点や配点は設けません。
+手がかりとして記載された語句の意味を出発点に、事件との合理的なつながりを説明してください。
+単語から解釈できる意味と、確認されていない中身を区別してください。例えば「日記」が提出されても、「犯人の自白が書いてある」と勝手に確定してはいけません。何を確認できる可能性があるか、という形で扱ってください。
+事件が起きた世界の設定に沿って解釈できますが、提出された手がかりを有利にするためだけの追加能力・人物関係・隠し証拠を作ってはいけません。
+結末を創作してから、その結末に合う手がかりを選ぶのではなく、提出された情報から比較してください。
+
+## 公平な比較
+
+全員に同じ事件解決の基準を適用してください。提出順、プレイヤー名、説明の長さ、以前のラウンドの勝敗だけを理由に有利不利をつけてはいけません。
+勝者を決めてから理由を後付けせず、各候補の有力な点と限界を比較してください。
+写真や画像から文字を読み取れない場合は、推測で補わず、読み取れない部分を確認してください。
+
+## 勝者・判定不能
+
+原則として、事件解決に最も有力な手がかりを提出した一人を選んでください。
+比較しても有力さに差をつける根拠がない場合は「判定不能」としてください。一人を選ぶためだけに証拠の中身を創作したり、抽選や提出順で決めたりしてはいけません。
+一部に有力でない候補があっても、最有力の複数候補の間に差をつけられない場合は判定不能です。該当する候補と、差がつかない理由を示してください。
+判定不能は、単に情報が足りないから自動的に適用するものではありません。必要な入力がそろっているなら、まず手がかりの意味と事件との結びつきから比較してください。
+
+## 出力形式
+
+🔎 AIまい探偵の判定
+
+最も有力な手がかり：カードの内容
+提出者：プレイヤー名
+判定理由：この事件の解決にどう役立つかを2〜4文で具体的に説明
+他の手がかりとの違い：各候補について、採用した手がかりとの比較を短く説明
+
+確定していない情報を含む場合は、それが確認すべき可能性や仮定であると分かる書き方にしてください。
+事件の結末、犯人、真相を確定する必要はありません。
+
+判定不能の場合は、代わりに以下の形式で回答してください。
+
+🔎 AIまい探偵の判定
+判定：判定不能
+最有力の候補：プレイヤー名と手がかり
+理由：差をつけられない理由を2〜4文で説明
+ポイント：この回のポイントは次回に持ち越し
+
+## ゲームの進行
+
+カードのシャッフル、各プレイヤーへの手がかり3枚の配布、各回の1枚選択、判定後の1枚補充はプレイヤー側で行います。
+事件を変えて全3回判定し、最も多くポイントを得たプレイヤーがゲームの勝者です。各回で最も有力と判定されたプレイヤーに1ポイントを与えます。
+判定不能の場合、その回の1ポイントは誰にも与えず、次回に持ち越します。持ち越しがある回で勝者が決まった場合は、その回の1ポイントと持ち越し分を合わせて与えます。
+得点集計を求められた場合だけ、判定済みの結果をもとに獲得点・累計点・持ち越し点を区別して示してください。同じ判定の説明や再表示を求められただけで、ポイントを重複加算してはいけません。
+最終回でも判定不能だった場合の残りポイントや、合計点が同点だった場合の決着方法は、このルールでは定められていません。独自の追加ラウンドや配点で決着させず、その状態を示してください。
+AIが未実施のラウンドを作ったり、得点や未提出のカードを推測して記録したりしてはいけません。</textarea></details></div></article><p class="muted">5作品のプロンプトを公開中です。</p></section>
 <section><h2>使い方</h2><ol class="steps"><li><b>01</b><h3>プロンプトをコピー</h3><p>このページでゲームを選び、判定に必要なルールをまとめてコピー。</p></li><li><b>02</b><h3>ChatGPTに送信</h3><p>自分のChatGPTで新しいチャットを開き、貼り付けて送信。</p></li><li><b>03</b><h3>ゲームをはじめる</h3><p>案内に沿って、お題・単語・写真などを続けて送ろう。</p></li></ol><p class="note">サイトの閲覧に登録は不要です。判定には、ご自身のChatGPTアカウントと利用枠を使います。APIキーの入力は必要ありません。貼り付け・送信はご自身で行ってください。ChatGPTの利用枠や画像送信の可否により、遊べない場合があります。</p></section></main><footer><a class="brand" href="./">TaiMEN GAMES</a><p>AIによる判定は、利用者自身のChatGPT内で行います。</p><a href="https://x.com/TaiMENGAMES" aria-label="TaiMENのXアカウント @TaiMENGAMES">X：@TaiMENGAMES</a><a href="https://github.com/friver1985/TaiMEN-GAMES">GitHub</a></footer></body></html>
