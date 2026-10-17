@@ -165,3 +165,5 @@ textarea{display:block;width:100%;min-height:230px;padding:15px;background:#f6f5
 .expansion-release{display:block;font-size:9px;color:var(--muted);margin-top:3px}.expansion-cover{scroll-margin-top:24px}
 
 .circle-intro{margin:0;padding:26px 0;border-bottom:1px solid var(--line);font-size:15px;line-height:1.9;overflow-wrap:anywhere}@media(max-width:600px){.circle-intro{padding:22px 0}}
+
+.site-footer .social-link{font-size:13px;line-height:1.8;text-decoration:none}.site-footer .social-link:hover{text-decoration:underline}.site-footer .social-link span{overflow-wrap:anywhere}
