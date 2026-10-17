@@ -41,7 +41,7 @@ h1{font-size:27px;letter-spacing:.06em;line-height:1.5;margin:0;font-weight:700}
 .game-list{min-width:0}
 .game-card{display:grid;grid-template-columns:195px minmax(0,1fr);gap:32px;padding:32px 0 38px;border-top:1px solid var(--line);scroll-margin-top:25px;min-width:0}
 .game-card:first-child{padding-top:0;border-top:0}
-.game-card:target h2{color:var(--accent)}
+
 .cover{margin:0;min-width:0}
 .cover>a{display:block;background:#e9e7e2;border:1px solid #deddd7;padding:12px;text-decoration:none}
 .cover img{display:block;width:100%;height:auto;max-height:270px;object-fit:contain;margin:auto}
