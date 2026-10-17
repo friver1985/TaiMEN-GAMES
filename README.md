@@ -52,6 +52,6 @@ In暴論の案内・将来の印刷用QRコードの宛先：https://friver1985.
 
 ## 掲載候補（すべて準備中）
 - あいまい三銃士を連れてきてよ：games/aimai-sanjushi/
-- AIまいアリーナジャッジ：games/aimai-arena/
+- AIまいアリーナ：games/aimai-arena/
 - ワンチャンポーカー：games/one-chance-poker/
-- in暴論ジャッジ：games/in-bouron/
+- in暴論：games/in-bouron/
