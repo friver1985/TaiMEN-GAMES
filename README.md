@@ -49,3 +49,9 @@ In暴論の案内・将来の印刷用QRコードの宛先：https://friver1985.
 
 現時点で正式な判定用プロンプトは未提供のため、ゲーム自体の開始・判定テストは未実施です。
 ライセンスは設定していません。
+
+## 掲載候補（すべて準備中）
+- あいまい三銃士を連れてきてよ：games/aimai-sanjushi/
+- AIまいアリーナジャッジ：games/aimai-arena/
+- ワンチャンポーカー：games/one-chance-poker/
+- in暴論ジャッジ：games/in-bouron/
