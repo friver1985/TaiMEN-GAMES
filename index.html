@@ -287,7 +287,7 @@
 仮定を使った場合だけ、次の2項目も表示してください。
 仮定：補った情報や状況
 判定の扱い：仮の勝者</textarea></details></div></article>
-<article class="game-card single-game" id="one-chance-poker" data-game><div class="card-body"><span class="badge">公開中</span><h3>ワンチャンポーカー</h3><p>5つの単語のつながりで役を作り、「ワンチャン役」の成立を狙う言葉のカードゲーム。</p><p class="muted">バージョン：v1.1 ／ 更新日：2026-10-17</p><ol class="instructions"><li>プロンプトをコピーし、ChatGPTの新しいチャットに貼り付けて送信します。</li><li>各プレイヤーの名前・選んだ5つの単語・ワンチャン役を送ります。</li></ol><div class="actions"><button class="button" type="button" data-copy>判定用プロンプトをコピー</button><a class="button secondary" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPTを開く ↗<span class="sr-only">（新しいタブ）</span></a></div><p data-copy-status role="status" aria-live="polite"></p><details><summary>プロンプト全文・手動コピー</summary><p class="muted">自動コピーができない場合は、下の全文を直接選択してコピーしてください。</p><textarea data-prompt aria-label="ワンチャンポーカーの判定用プロンプト全文" readonly rows="10">あなたは、言葉を使ったカードゲーム「AIポーカー（ワンチャンポーカー）」の判定役です。  
+<article class="game-card single-game has-cover" id="one-chance-poker" data-game><figure class="cover"><a href="./assets/covers/one-chance-poker.png" target="_blank" rel="noopener noreferrer" aria-label="ワンチャンポーカーの表紙を原寸で開く（新しいタブ）"><img src="./assets/covers/one-chance-poker.png" alt="ワンチャンポーカーの表紙" width="174" height="246" loading="lazy" decoding="async"></a></figure><div class="card-body"><span class="badge">公開中</span><h3>ワンチャンポーカー</h3><p>5つの単語のつながりで役を作り、「ワンチャン役」の成立を狙う言葉のカードゲーム。</p><p class="muted">バージョン：v1.2 ／ 更新日：2026-10-17</p><ol class="instructions"><li>プロンプトをコピーし、ChatGPTの新しいチャットに貼り付けて送信します。</li><li>各プレイヤーの名前・選んだ5つの単語・ワンチャン役を送ります。</li></ol><div class="actions"><button class="button" type="button" data-copy>判定用プロンプトをコピー</button><a class="button secondary" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPTを開く ↗<span class="sr-only">（新しいタブ）</span></a></div><p data-copy-status role="status" aria-live="polite"></p><details><summary>プロンプト全文・手動コピー</summary><p class="muted">自動コピーができない場合は、下の全文を直接選択してコピーしてください。</p><textarea data-prompt aria-label="ワンチャンポーカーの判定用プロンプト全文" readonly rows="10">あなたは、言葉を使ったカードゲーム「AIポーカー（ワンチャンポーカー）」の判定役です。  
 プレイヤーは「手札4枚＋場札3枚（合計7枚）」の中から5枚を選び、それに対応する「ワンチャン役（ポーカーの役名）」を宣言します。  
 （最終ラウンドのみ：場札は「2枚＋JOKER」になります。JOKERは任意の名詞として使用可能です）
 
@@ -314,20 +314,30 @@ JOKERが選ばれている場合は、どの名詞として使うかを確認し
 
 🌟【役の強さランク表（★数はユニーク）】
 
-| 役名                             | 評価     |
-|----------------------------------|----------|
-| ハイカード（High Card）         | ★1       |
-| ワンペア（One Pair）            | ★2       |
-| ツーペア（Two Pair）            | ★3       |
-| スリーカード（Three of a Kind） | ★4       |
-| ストレート（Straight）          | ★5       |
-| フラッシュ（Flush）             | ★6       |
-| フルハウス（Full House）        | ★7       |
-| フォーカード（Four of a Kind）  | ★8       |
-| ストレートフラッシュ            | ★9       |
-| ファイブカード（Five of a Kind）| ★10      |
+| 役名 | 評価 | 基本となる成立条件 |
+|---|---|---|
+| ハイカード（High Card） | ★1 | バラバラで共通点なし |
+| ワンペア（One Pair） | ★2 | 2語が同カテゴリ |
+| ツーペア（Two Pair） | ★3 | ペアが2組成立 |
+| スリーカード（Three of a Kind） | ★4 | 3語が同カテゴリ |
+| ストレート（Straight） | ★5 | 5語が時間軸で連続 |
+| フラッシュ（Flush） | ★6 | 5語が同ジャンル |
+| フルハウス（Full House） | ★7 | 3語＋2語でまとまり |
+| フォーカード（Four of a Kind） | ★8 | 4語が同カテゴリ |
+| ストレートフラッシュ | ★9 | 5語が「同カテゴリ」で順序性あり |
+| ファイブカード（Five of a Kind） | ★10 | 5語すべてが同カテゴリ |
 
 ※意味やテーマの共通性、順序的連続性、カテゴリの一致などを基準に柔軟に判断してください。たとえば「りんご・バナナ・みかん・ぶどう・もも」は、解釈の説得力によってフラッシュともファイブカードとも判断できます。果物という分類だけで、役名を一律に固定してはいけません。適用した解釈を理由に示してください。
+
+【成立条件の適用】
+
+上の条件を判定の基本にしてください。ただし、単語がどのカテゴリ・ジャンルに属するかは、意味、機能、文化的なつながりなどから柔軟に解釈できます。
+同カテゴリと判断した場合は、共通する具体的なカテゴリを示してください。同ジャンルと判断した場合は、共通する分野やテーマを示してください。どの語がどのまとまりに入るかが分かる説明にしてください。
+「すべて言葉」「すべて存在するもの」のように、どんな組合せにも当てはまる共通点だけで強い役にしてはいけません。今回の5語に納得できるつながりがあるかを判断してください。
+ストレートは時間軸での連続を基本とし、ストレートフラッシュでは同カテゴリであることと順序性の両方を説明してください。
+ツーペアは別々の2語ずつ、フルハウスは別々の3語と2語として構成してください。同じ1枚を複数の組に重複使用してはいけません。
+成立役は、条件を満たすと納得できる解釈の中から最も強い役を一つ選んでください。無理のある解釈を、強い役を選ぶためだけに成立扱いしてはいけません。
+成立役とワンチャン役を混同せず、プレイヤーの説明をワンチャン度だけに反映する手順は維持してください。
 
 ---
 
