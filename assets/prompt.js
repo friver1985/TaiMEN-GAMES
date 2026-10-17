@@ -1,7 +1,8 @@
-const button = document.querySelector('[data-copy]');
-const prompt = document.querySelector('#prompt-text');
-const status = document.querySelector('[data-copy-status]');
-if (button && prompt && status && !button.disabled) {
+document.querySelectorAll('[data-game]').forEach((game) => {
+  const button = game.querySelector('[data-copy]');
+  const prompt = game.querySelector('[data-prompt]');
+  const status = game.querySelector('[data-copy-status]');
+  if (!button || !prompt || !status || button.disabled) return;
   button.addEventListener('click', async () => {
     const text = prompt.value;
     if (!text.trim()) {
@@ -23,4 +24,4 @@ if (button && prompt && status && !button.disabled) {
       button.disabled = false;
     }
   });
-}
+});
