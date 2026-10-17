@@ -34,7 +34,7 @@ GitHub Pagesはmainブランチの /(root) から配信します。更新反映�
 
 ゲーム別QRコードには次のURLを使います。すべて同じトップページ内の各作品へ移動します。
 
-- あいまい三銃士を連れてきてよ：https://friver1985.github.io/TaiMEN-GAMES/#aimai-sanjushi
+- AIまい三銃士を連れてきたよ！：https://friver1985.github.io/TaiMEN-GAMES/#aimai-sanjushi
 - AIまいアリーナ：https://friver1985.github.io/TaiMEN-GAMES/#aimai-arena
 - ワンチャンポーカー：https://friver1985.github.io/TaiMEN-GAMES/#one-chance-poker
 - in暴論：https://friver1985.github.io/TaiMEN-GAMES/#in-bouron
@@ -59,7 +59,7 @@ GitHub Pagesはmainブランチの /(root) から配信します。更新反映�
 
 - assets/covers/aimai-arena.jpg：作者提供の表紙をそのまま掲載。
 - assets/covers/in-bouron.png：作者提供のcard_L_16.png（10785×7832）から箱の正面を切り出し。範囲は左上(3240,6355)、幅750、高さ1040ピクセル。絵柄の生成・加筆なし。
-- あいまい三銃士は表紙素材の提供待ち。プロンプトはそのまま利用できます。
+- 三銃士の表紙も掲載済みです。プロンプトはそのまま利用できます。
 
 ## 追加素材と作品の区分
 
@@ -91,3 +91,8 @@ URL：https://friver1985.github.io/TaiMEN-GAMES/#neko-wa-imasuka
 表紙：assets/covers/neko-wa-imasuka.png。元画像10000×7436の左上(3130,6040)、幅665、高さ800ピクセル。加筆なし。
 
 ねこはいますか？：今回提示された人数3人以上を採用。1枚ごとに全ワードを累積して画像生成し、最初に入れた猫が消えたらゲーム終了。AIは有無や勝敗を判定しません。実際の画像生成を使ったプレイテストは未実施です。
+
+## 三銃士の表紙と正式名
+
+2026-10-17：作者確認により作品名を「AIまい三銃士を連れてきたよ！」に統一。既存の #aimai-sanjushi URLと判定ルールは維持しています。
+表紙：assets/covers/aimai-sanjushi.png。作者提供a3-card_L_32-1.png（10804×7985）の箱正面、左上(3345,6450)、幅710、高さ1000ピクセルを切り出し。加筆なし。
