@@ -5,6 +5,7 @@
   --muted:#686b77;
   --line:#d8d5d5;
   --accent:#c72d3e;
+  --button:#343943;
   --accent-light:#f5e5e7;
   --green:#38705c;
 }
@@ -55,8 +56,8 @@ h1{font-size:27px;letter-spacing:.06em;line-height:1.5;margin:0;font-weight:700}
 .card-body h2{font-size:25px;line-height:1.55;letter-spacing:.01em;overflow-wrap:anywhere;margin:0 0 12px}
 .card-body>p:not(.version):not([data-copy-status]){margin:0 0 22px;font-size:13px;line-height:1.9;color:#555865}
 .actions{display:flex;gap:9px;flex-wrap:wrap}
-.button{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:47px;padding:11px 17px;border:1px solid var(--accent);border-radius:4px;background:var(--accent);color:white;font-size:12px;font-weight:700;line-height:1.6;text-decoration:none;cursor:pointer;transition:background .15s,border-color .15s}
-.button:hover{background:#a51d2d;border-color:#a51d2d}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:47px;padding:11px 17px;border:1px solid var(--button);border-radius:4px;background:var(--button);color:white;font-size:12px;font-weight:700;line-height:1.6;text-decoration:none;cursor:pointer;transition:background .15s,border-color .15s}
+.button:hover{background:#22262e;border-color:#22262e}
 .button.secondary{background:transparent;border-color:#c7c1c3;color:var(--ink);font-weight:500}
 .button.secondary:hover{background:white;border-color:#a08d92}
 .button:disabled{background:#e4e4e8;border-color:#e4e4e8;color:#797984;cursor:default}
