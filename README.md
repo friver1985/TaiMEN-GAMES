@@ -120,3 +120,10 @@ URL：https://friver1985.github.io/TaiMEN-GAMES/#neko-wa-imasuka
 ボタンはチャコール系（#343943）を使用。ロゴと小さなアクセントの赤は維持しています。
 
 「ChatGPT × アナログゲーム」はA1ポスターの3要素を元の書体のまま切り出し、横一列に再配置しています。assets/brand/chatgpt-analog-horizontal.png（2036×224）。ヘッダーでPCではロゴ横、スマホではロゴ下に表示します。元画像の切り出し範囲はChatGPT：(540,1310,5930,1050)、×：(3000,2510,1030,1130)、アナログゲーム：(540,3750,5940,1080)。
+
+## Xの公式アイコン
+
+assets/icons/x-logo.svg はX公式ブランドツールキットのx-logo.zip内のlogo.svgを使用しています。SVG自体は配布内容のままで、CSSで黒色表示にしています。
+配布元：https://about.x.com/ja/who-we-are/brand-toolkit
+取得先：https://about.x.com/content/dam/about-twitter/x/brand-toolkit/x-logo.zip
+ヘッダーとフッターから @TaiMENGAMES へリンクします。アイコンのみのリンクにもアカウント名のaria-labelを付けています。
