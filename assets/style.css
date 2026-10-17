@@ -81,7 +81,7 @@ textarea{display:block;width:100%;min-height:230px;padding:15px;background:#f6f5
 .cover-pair img{width:100%;height:auto;filter:drop-shadow(0 3px 4px #24263417)}
 .detective-covers figcaption{font-size:10px;color:var(--muted);margin-top:9px}
 .site-footer{max-width:1360px;margin:auto;padding:24px 40px 32px;border-top:1px solid var(--line);display:flex;align-items:center;flex-wrap:wrap;gap:22px}
-.site-footer .brand{font-size:15px;letter-spacing:-.3px}
+.site-footer .brand{font-size:15px;letter-spacing:-.3px;margin-right:auto}
 .site-footer p{font-size:10px;color:var(--muted);flex:1;margin:0}
 .site-footer>a:not(.brand){font-size:10px;color:var(--muted)}
 .skip-link{position:fixed;top:-60px;left:15px;padding:12px 18px;background:var(--ink);color:white;z-index:10}
