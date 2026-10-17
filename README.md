@@ -102,10 +102,11 @@ URL：https://friver1985.github.io/TaiMEN-GAMES/#neko-wa-imasuka
 - in暴論：2026年秋
 - 名所MIXカルタ：2026年春
 - ワンチャンポーカー：2025年秋
-- AIまい三銃士を連れてきたよ！：2025年春
-- AIまい探偵の事件簿：2024年秋
-- AIまいアリーナ：2024年春
-- ねこはいますか？：2023年秋
+- ダンジョン（アリーナ拡張）：2025年春
+- AIまい三銃士を連れてきたよ！：2024年秋
+- AIまい探偵の事件簿：2024年春
+- AIまいアリーナ：2023年秋
+- ねこはいますか？：2023年春
 
 リリース時期は作品の発売時期です。プロンプトのバージョン・更新日とは別に管理します。
 
@@ -127,3 +128,5 @@ assets/icons/x-logo.svg はX公式ブランドツールキットのx-logo.zip内
 配布元：https://about.x.com/ja/who-we-are/brand-toolkit
 取得先：https://about.x.com/content/dam/about-twitter/x/brand-toolkit/x-logo.zip
 ヘッダーとフッターから @TaiMENGAMES へリンクします。アイコンのみのリンクにもアカウント名のaria-labelを付けています。
+
+ダンジョンのリリースを2025年春として補完し、それ以前の各作品の時期を半年ずつ修正。ダンジョンはアリーナの拡張として同じ作品欄に掲載し、リリース索引からは #aimai-arena-dungeon へ移動できます。作品数は7作品のままです。
