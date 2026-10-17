@@ -1,0 +1,2 @@
+# TaiMEN-GAMES
+TaiMEN Gamesのゲームのサポートページ。
