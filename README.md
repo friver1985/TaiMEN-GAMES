@@ -83,3 +83,9 @@ GitHub Pagesはmainブランチの /(root) から配信します。更新反映�
 作者提供の印刷データから箱の正面を切り出し、6作品目として追加。正式なゲーム用プロンプトは確認中でコピーは無効です。
 URL：https://friver1985.github.io/TaiMEN-GAMES/#meisho-mix-karuta
 表紙：assets/covers/meisho-mix-karuta.png。元画像mmix_card_L_32_.png（2601×1918）の左上(810,1550)、幅175、高さ240ピクセル。加筆なし。
+
+## ねこはいますか？（準備中）
+
+作者提供の印刷データIMG_0064.jpgの箱正面を切り出し、7作品目として追加。ルールを作者に確認してプロンプトを新規作成します。コピーはまだ無効です。
+URL：https://friver1985.github.io/TaiMEN-GAMES/#neko-wa-imasuka
+表紙：assets/covers/neko-wa-imasuka.png。元画像10000×7436の左上(3130,6040)、幅665、高さ800ピクセル。加筆なし。
