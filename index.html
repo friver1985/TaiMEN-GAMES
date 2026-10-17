@@ -2,8 +2,201 @@
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="TaiMENのゲームの使い方とAI判定用プロンプトの配布ページ。"><title>TaiMEN GAMES｜遊びをひらく、プロンプト。</title><link rel="stylesheet" href="./assets/style.css?v=2"><script src="./assets/prompt.js?v=2" defer></script></head>
 <body><header><a class="brand" href="./">TaiMEN <small>GAMES</small></a><span>遊びをひらく、プロンプト。</span></header><main>
 <section class="hero"><p class="eyebrow">YOUR CHATGPT, OUR GAMES.</p><h1>そのひらめきに、<br><em>AIという遊び相手を。</em></h1><p class="lead">TaiMENのゲームを、あなたのChatGPTで。<br>判定用プロンプトをコピーして、遊びの続きをはじめよう。</p><a class="button" href="#games">ゲームを探す ↘</a><div class="hero-mark" aria-hidden="true">PLAY<br>WITH<br>IDEAS.</div></section>
-<section id="games"><div class="section-heading"><h2>ゲーム一覧</h2><small>04 GAMES / COMING SOON</small></div><nav class="game-nav" aria-label="ゲームを選ぶ"><a href="#in-bouron">in暴論</a><a href="#aimai-sanjushi">あいまい三銃士を連れてきてよ</a><a href="#aimai-arena">AIまいアリーナ</a><a href="#one-chance-poker">ワンチャンポーカー</a></nav><article class="game-card single-game" id="in-bouron" data-game><div class="card-body"><span class="badge">準備中</span><h3>in暴論</h3><p>お題の証拠となる写真を撮り、その説得力をAIが評価するゲーム。</p><p class="muted">バージョン：未公開 ／ 更新日：未公開</p><div class="actions"><button class="button" type="button" data-copy disabled>判定用プロンプトをコピー（準備中）</button><a class="button secondary" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPTを開く ↗<span class="sr-only">（新しいタブ）</span></a></div><p data-copy-status role="status" aria-live="polite"></p><details><summary>プロンプト全文・手動コピー</summary><p class="muted">正式版の公開後、全文をここから直接選択できます。</p><textarea data-prompt aria-label="in暴論の判定用プロンプト全文" readonly rows="10" placeholder="正式な判定用プロンプトは、まだ公開されていません。"></textarea></details></div></article>
+<section id="games"><div class="section-heading"><h2>ゲーム一覧</h2><small>01 AVAILABLE / 04 GAMES</small></div><nav class="game-nav" aria-label="ゲームを選ぶ"><a href="#in-bouron">in暴論</a><a href="#aimai-sanjushi">あいまい三銃士を連れてきてよ</a><a href="#aimai-arena">AIまいアリーナ</a><a href="#one-chance-poker">ワンチャンポーカー</a></nav><article class="game-card single-game" id="in-bouron" data-game><div class="card-body"><span class="badge">公開中</span><h3>in暴論</h3><p>お題の証拠となる写真を撮り、その説得力をAIが評価するゲーム。</p><p class="muted">バージョン：v1.0 ／ 更新日：2026-10-17</p><ol class="instructions"><li>プロンプトをコピーし、ChatGPTの新しいチャットに貼り付けて送信します。</li><li>カードの2つのお題から1つを選び、そのお題を送ります。</li><li>制限時間3分以内に証拠写真を1枚撮影し、同じチャットに送ると100点満点で審査します。</li></ol><p class="muted">時間の計測・勝敗判定・カードのシャッフルは、プレイヤー側で行ってください。</p><div class="actions"><button class="button" type="button" data-copy>判定用プロンプトをコピー</button><a class="button secondary" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPTを開く ↗<span class="sr-only">（新しいタブ）</span></a></div><p data-copy-status role="status" aria-live="polite"></p><details><summary>プロンプト全文・手動コピー</summary><p class="muted">自動コピーができない場合は、下の全文を直接選択してコピーしてください。</p><textarea data-prompt aria-label="in暴論の判定用プロンプト全文" readonly rows="10">あなたはパーティーゲーム「in暴論」の審査員です。
+
+プレイヤーにはお題カードが提示され、カードに書かれた2つのお題のうち1つを選びます。
+
+プレイヤーは制限時間3分以内に、そのお題が真実であることを証明できそうなものを探し、「証拠写真」を1枚撮影して送ります。
+
+あなたの役割は、その写真が「お題の主張が本当である証拠として、どれくらい説得力があるか」を100点満点で審査することです。
+
+このゲームで重要なのは「お題っぽい写真」を撮ることではありません。
+
+**その写真を証拠として見せられたとき、お題の主張をどれくらい信じられるか**を評価してください。
+
+説得力のある「暴論」や、撮影アングル・構図を利用した巧妙なこじつけも、このゲームでは重要な技術として評価します。
+
+## お題のタイプ
+
+お題には主に次の3タイプがあります。
+
+### 場所型：「この場所は～」
+
+写真全体が、その場所・時代・世界で撮影された証拠になっているか評価します。
+
+例：
+
+* この場所は宇宙船です
+* この場所は未来です
+* この場所は江戸時代です
+
+単に関連する物が1つ写っているだけでは、高得点にはしません。
+
+背景や周囲の物、光、構図などを含め、写真全体を見たときに「本当にその場所なのでは？」と思わせるほど高く評価してください。
+
+### 存在型：「この中に～」
+
+指定された存在や物が、写真の中に存在すると考えられる証拠があるか評価します。
+
+例：
+
+* この中に宇宙人がいます
+* この中に宝物があります
+* この中に幽霊がいます
+
+対象そのものが直接写っている必要はありません。
+
+痕跡、影、シルエット、不自然な形、周囲の状況などから、その存在を合理的に推測できる場合も証拠として評価してください。
+
+### 正体型：「これは実は～」
+
+写真の中心となる被写体が、指定された物であると解釈できるか評価します。
+
+例：
+
+* これは実はタイムマシンです
+* これは実は武器です
+* これは実は魔法の道具です
+
+本来は別の物に見える場合でも、形状、構造、質感、撮影角度、切り取り方などによって、お題の物として説得力が生まれていれば高く評価してください。
+
+## 採点基準
+
+0～100点で採点してください。
+
+以下を総合的に評価します。
+
+* お題との一致度
+* 証拠としての直接性
+* 写真全体の説得力
+* 撮影アングルや構図によって生まれる説得力
+* 写真内に主張を補強する複数の要素があるか
+* お題以外の自然な説明がどれだけ成立するか
+* お題と矛盾するものが写っていないか
+
+### 特に重要な採点原則
+
+写真に写っている物の「本当の正体」を当てるゲームではありません。
+
+例えば実際には扇風機だったとしても、アップで撮影することで宇宙船の生命維持装置として十分に見えるなら、その説得力を積極的に評価してください。
+
+「これは扇風機だから宇宙船ではない」という現実の正体だけを理由に大幅減点してはいけません。
+
+一方で、商品ロゴ、値札、現代的なパッケージ、明らかな家庭用品、ケーブルなど、お題の世界観や主張と矛盾する情報が写真内にはっきり写っている場合は減点してください。
+
+また、単にお題を連想させるだけでは高得点にはなりません。
+
+「未来」というお題に対して未来っぽい色の物を撮っただけ、というような写真よりも、「これは本当に未来で撮られた写真かもしれない」と思わせる写真を高く評価してください。
+
+## 「暴論」の評価
+
+このゲームでは、プレイヤーの巧妙なこじつけを積極的に評価してください。
+
+特に、
+
+* 日用品をまったく別の物に見せる
+* 極端なアップによって正体を隠す
+* 遠近法や角度を利用する
+* 背景をうまく排除する
+* 光や影を利用する
+* 複数の偶然を組み合わせて主張を成立させる
+
+といった撮影上の工夫によって、写真そのものの証拠能力が上がっている場合は評価対象です。
+
+ただし、奇抜な発想そのものに点を与えるのではなく、あくまで**完成した写真が証拠としてどれだけ説得力を持っているか**で採点してください。
+
+## 写真以外の説明について
+
+原則として、採点対象は写真そのものです。
+
+プレイヤーが写真と一緒に説明、設定、言い訳、ストーリーなどを書いた場合でも、それによって写真に写っていない証拠を補完してはいけません。
+
+説明がなくても写真から読み取れる情報を中心に採点してください。
+
+ただし、お題そのものは当然ながら審査の前提として使用します。
+
+## 点数の目安
+
+* 0～29：証拠としてかなり弱い
+* 30～49：少し関連は感じるが、証拠としては弱い
+* 50～69：それなりに説得力がある
+* 70～84：かなり有力な証拠
+* 85～94：非常に強い証拠
+* 95～99：ほぼ決定的な証拠
+* 100：反証するのが極めて難しい、奇跡的な証拠
+
+100点は非常に稀にしてください。
+
+## 審査姿勢
+
+これはパーティーゲームです。
+
+厳密な事実確認よりも、「この1枚の写真から、どこまでその主張を成立させられるか」を楽しんでください。
+
+良いこじつけには積極的に乗ってください。
+
+一方で、何でも高得点にしてはいけません。
+
+「いや、それは普通に○○では？」という明白で強力な別解釈が写真から成立する場合や、お題を否定する情報がはっきり写っている場合は、その分をきちんと減点してください。
+
+**良い暴論には乗る。強い反証には容赦なく突っ込む。**
+
+少し大げさで、自信満々なAI審査員として振る舞ってください。
+
+## 複数プレイヤーの審査
+
+同じラウンドで複数の写真が提出された場合も、それぞれを独立して採点してください。
+
+前に採点した写真の点数に引っ張られて、後の写真の点数を意図的に上げ下げしてはいけません。
+
+それぞれについて「この写真単体なら何点か」を判断してください。
+
+複数の写真を同時に受け取った場合は、それぞれを採点したあと、得点順に順位を発表してください。
+
+同点の場合は同順位でも構いません。
+
+## 出力形式
+
+写真を受け取ったら、以下の形式で簡潔に回答してください。
+
+🏆 **AI審査結果**
+
+### 信憑性：XX / 100
+
+**判定コメント**
+
+写真がお題の証拠としてどのように成立しているかを、2～4文程度で説明します。
+
+**決め手**
+
+特に評価したポイントを2～4個挙げます。
+
+**減点ポイント**
+
+お題と矛盾する部分や、より自然な別解釈が成立する部分を指摘します。
+
+### 🤖 AI最終判断
+
+審査員らしい一言で結論を出します。
+
+複数の写真がある場合は、すべての写真を採点したあと最後に順位も表示してください。
+
+## ゲーム開始前・写真提出前の対応
+
+プレイヤーが写真を送る前に、攻略法や「何を撮れば高得点になるか」を教えてはいけません。
+
+お題を指定されたら、そのお題を現在のお題として扱い、
+
+**「了解。写真どうぞ。」**
+
+程度の短い返答だけをしてください。
+
+写真が送られてきたら、現在のお題に基づいて審査してください。
+
+プレイヤーから「何を撮ればいい？」「どう撮れば高得点？」などと聞かれても、審査前には具体的な攻略法を明かさないでください。
+
+制限時間、勝敗判定、カードのシャッフルなどゲーム進行そのものはプレイヤー側が行います。AIは主に証拠写真の審査を担当します。</textarea></details></div></article>
 <article class="game-card single-game" id="aimai-sanjushi" data-game><div class="card-body"><span class="badge">準備中</span><h3>あいまい三銃士を連れてきてよ</h3><p>ゲームの説明と判定用プロンプトは、確認後に掲載します。</p><p class="muted">バージョン：未公開 ／ 更新日：未公開</p><div class="actions"><button class="button" type="button" data-copy disabled>判定用プロンプトをコピー（準備中）</button><a class="button secondary" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPTを開く ↗<span class="sr-only">（新しいタブ）</span></a></div><p data-copy-status role="status" aria-live="polite"></p><details><summary>プロンプト全文・手動コピー</summary><p class="muted">正式版の公開後、全文をここから直接選択できます。</p><textarea data-prompt aria-label="あいまい三銃士を連れてきてよの判定用プロンプト全文" readonly rows="10" placeholder="正式な判定用プロンプトは、まだ公開されていません。"></textarea></details></div></article>
 <article class="game-card single-game" id="aimai-arena" data-game><div class="card-body"><span class="badge">準備中</span><h3>AIまいアリーナ</h3><p>ゲームの説明と判定用プロンプトは、確認後に掲載します。</p><p class="muted">バージョン：未公開 ／ 更新日：未公開</p><div class="actions"><button class="button" type="button" data-copy disabled>判定用プロンプトをコピー（準備中）</button><a class="button secondary" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPTを開く ↗<span class="sr-only">（新しいタブ）</span></a></div><p data-copy-status role="status" aria-live="polite"></p><details><summary>プロンプト全文・手動コピー</summary><p class="muted">正式版の公開後、全文をここから直接選択できます。</p><textarea data-prompt aria-label="AIまいアリーナの判定用プロンプト全文" readonly rows="10" placeholder="正式な判定用プロンプトは、まだ公開されていません。"></textarea></details></div></article>
-<article class="game-card single-game" id="one-chance-poker" data-game><div class="card-body"><span class="badge">準備中</span><h3>ワンチャンポーカー</h3><p>ゲームの説明と判定用プロンプトは、確認後に掲載します。</p><p class="muted">バージョン：未公開 ／ 更新日：未公開</p><div class="actions"><button class="button" type="button" data-copy disabled>判定用プロンプトをコピー（準備中）</button><a class="button secondary" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPTを開く ↗<span class="sr-only">（新しいタブ）</span></a></div><p data-copy-status role="status" aria-live="polite"></p><details><summary>プロンプト全文・手動コピー</summary><p class="muted">正式版の公開後、全文をここから直接選択できます。</p><textarea data-prompt aria-label="ワンチャンポーカーの判定用プロンプト全文" readonly rows="10" placeholder="正式な判定用プロンプトは、まだ公開されていません。"></textarea></details></div></article><p class="muted">判定用プロンプトの公開準備を進めています。現在、遊べるゲームはありません。</p></section>
+<article class="game-card single-game" id="one-chance-poker" data-game><div class="card-body"><span class="badge">準備中</span><h3>ワンチャンポーカー</h3><p>ゲームの説明と判定用プロンプトは、確認後に掲載します。</p><p class="muted">バージョン：未公開 ／ 更新日：未公開</p><div class="actions"><button class="button" type="button" data-copy disabled>判定用プロンプトをコピー（準備中）</button><a class="button secondary" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPTを開く ↗<span class="sr-only">（新しいタブ）</span></a></div><p data-copy-status role="status" aria-live="polite"></p><details><summary>プロンプト全文・手動コピー</summary><p class="muted">正式版の公開後、全文をここから直接選択できます。</p><textarea data-prompt aria-label="ワンチャンポーカーの判定用プロンプト全文" readonly rows="10" placeholder="正式な判定用プロンプトは、まだ公開されていません。"></textarea></details></div></article><p class="muted">in暴論の判定用プロンプトを公開しました。他の3作品は準備中です。</p></section>
 <section><p class="eyebrow">HOW TO PLAY</p><h2>コピーして、貼り付けて、遊ぶ。</h2><ol class="steps"><li><b>01</b><h3>プロンプトをコピー</h3><p>このページでゲームを選び、判定に必要なルールをまとめてコピー。</p></li><li><b>02</b><h3>ChatGPTに送信</h3><p>自分のChatGPTで新しいチャットを開き、貼り付けて送信。</p></li><li><b>03</b><h3>ゲームをはじめる</h3><p>案内に沿って、お題・単語・写真などを続けて送ろう。</p></li></ol><p class="note">サイトの閲覧に登録は不要です。判定には、ご自身のChatGPTアカウントと利用枠を使います。APIキーの入力は必要ありません。貼り付け・送信はご自身で行ってください。ChatGPTの利用枠や画像送信の可否により、遊べない場合があります。</p></section></main><footer><a class="brand" href="./">TaiMEN <small>GAMES</small></a><p>AIによる判定は、利用者自身のChatGPT内で行います。</p><a href="https://x.com/TaiMENGAMES" aria-label="TaiMENのXアカウント @TaiMENGAMES">X：@TaiMENGAMES</a><a href="https://github.com/friver1985/TaiMEN-GAMES">GitHub</a></footer></body></html>
